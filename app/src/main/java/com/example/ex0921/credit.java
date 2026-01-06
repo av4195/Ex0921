@@ -16,6 +16,10 @@ public class credit extends AppCompatActivity {
 
     }
 
+    /**
+     * this method is for the button that moves to the main activity
+     * @param v
+     */
     public void backToMain(View v){
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);

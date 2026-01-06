@@ -30,7 +30,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:onClick="alert1"
-            android:text="Button" />
+            android:text="massage" />
 
         <Button
             android:id="@+id/btn2"
@@ -38,7 +38,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:onClick="alert2"
-            android:text="Button" />
+            android:text="massage and image" />
 
         <Button
             android:id="@+id/btn3"
@@ -54,7 +54,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:onClick="alert4"
-            android:text="Button" />
+            android:text="color" />
 
         <Button
             android:id="@+id/btn5"
@@ -62,15 +62,15 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:onClick="alert5"
-            android:text="Button" />
+            android:text="reset" />
 
         <Button
             android:id="@+id/button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:onClick="moreToCredit"
-            android:text="Button" />
+            android:onClick="moveToCredit"
+            android:text="Credits" />
 
         <Space
             android:layout_width="match_parent"

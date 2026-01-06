@@ -12,6 +12,13 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.Random;
+/**
+ * @author Adi Waizman
+ * @version 1.0
+ * @since 06/01/2026
+ * <p>
+ * this class is the main activity of a alert dialog app
+ */
 
 public class MainActivity extends AppCompatActivity {
 
@@ -39,20 +46,32 @@ public class MainActivity extends AppCompatActivity {
         builder5 = new AlertDialog.Builder(this);
     }
 
+    /**
+     *this method is for the first button, it shows a message
+     * @param v
+     */
     public void alert1(View v){
-        builder1.setMessage("j,");
+        builder1.setMessage("massage");
         AlertDialog ad= builder1.create();
         ad.show();
     }
 
+    /**
+     *this method is for the second button, it shows a message and an image
+     * @param v
+     */
     public void alert2(View v) {
-        builder2.setTitle("k");
-        builder2.setMessage("j,");
+        builder2.setTitle("a message and image");
+        builder2.setMessage("image of the sun");
         builder2.setIcon(R.drawable.images);
         AlertDialog ad = builder2.create();
         ad.show();
     }
 
+    /**
+     *this method is for the third button, it shows a message and an image and a close button
+     * @param v
+     */
     public void alert3(View v){
         builder3.setTitle(" ");
         builder3.setIcon(R.drawable.images);
@@ -66,6 +85,10 @@ public class MainActivity extends AppCompatActivity {
         ad.show();
     }
 
+    /**
+     * this method is for the fourth button, it shows a message that changes the background color randomly
+     * @param v
+     */
     public void alert4(View v){
         builder4.setTitle(" ");
         builder4.setMessage(" colors");
@@ -87,6 +110,10 @@ public class MainActivity extends AppCompatActivity {
         ad.show();
     }
 
+    /**
+     * this method is for the fifth button, it shows a message that changes the background color randomly and a reset button that set the background to white, and a close button
+     * @param v
+     */
     public void alert5(View v){
         builder5.setTitle(" ");
         builder5.setMessage(" colors");
@@ -113,7 +140,11 @@ public class MainActivity extends AppCompatActivity {
         ad.show();
     }
 
-    public void moreToCredit(View v){
+    /**
+     * this method is for the button that moves to the credit activity
+     * @param v
+     */
+    public void moveToCredit(View v){
         Intent intent = new Intent(this, credit.class);
         startActivity(intent);
     }
